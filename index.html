@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>vantung</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Van Tung</a>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu();">About</a></li>
+            <li><a href="#favourites" onclick="toggleMenu();">Favourite</a></li>
+            <li><a href="#myLife" onclick="toggleMenu();">My Life</a></li>
+            <li><a href="#diemmanh" onclick="toggleMenu();">Experience</a></li>
+            <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
+        </ul>
+    </header>
+    <section class="banner" id="home">
+        <div class="textBx">
+            <h2>こんにちは！私は<br><span>Tran Van Tung</span></h2>
+            <h3>私はベトナムからの留学生です。来日して６年目になりました</h3>
+            <a href="#about" class="btn" >私について</a>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="heading">
+            <h2>私について</h2>
+        </div>
+            <div class="content">
+            <div class="contentBx">
+                <h3>私は　TRAN VAN TUNG（チャン　ヴァン　トゥン）と申します。</h3></br>
+                <h4>現在、流通経済大学　流通情報学部　流通情報学科　４年生　です。</h3>
+                <p>2015年4月３日に初めて日本にきました。 2015年4月7日に進和外語アカデミーという日本語学校に入学し、ここで２年間日本語を勉強していました。
+                    日本語学校で多国籍の人たちに出会えて友達になり、その人たちの様々な文化や習慣に触れて羨ましいこともあったし驚いたこともあったのですが、本当に楽しかったです。
+                    ここを卒業して、2017年４月１日に流通経済大学の流通情報学部に入学しました。大学で様々なことが勉強できましたが、私が一番良かったと思ったのは学祭や国際交流会などに参加し、ベトナムの文化を日本人学生たちに伝えて、その学生たちにベトナムのことに気になるように努力していました。
+                    
+                     <br><br> 2021年の3月に大学をする予定の私は卒業したら選んだ道に従い、成功するまで進んでいきます。
+                </p>
+            </div>
+
+            <div class="w50">
+                <img src="./banner/img111.jpeg" class="img" style="min-width:100%;">
+            </div>
+        </div>
+    </section>
+
+    <section class="favourites" id="favourites">
+        <div class="heading white">
+            <h2>Favourite anh Experience</h2>
+            <p>I'm an international student.I came to Japan 6 years ago from VIET NAM.</br>This is my Favourite </p>
+        </div>
+        <div class="content">
+            <div class="favouritesBX"onclick="favourite_click();">
+                <img src="./icon_favourite/camera.png">
+                <h2>Photography</h2>
+                <p>写真を見ただけで、その時の様子を思い出すことができる。
+                    記憶とか思い出は目に見える形として残らないけど、写真は形として残しておくことができる。
+                    人生の素敵な瞬間を残しておきたい。</p>
+            </div>
+            <div class="favouritesBX"onclick="favourite_click();">
+                <img src="./icon_favourite/video_edit.png">
+                <h2>Video Editing</h2>
+                <p>動画撮影をし、面白い動画を編集し、沢山の人に見てくれると嬉しいし、日常の生活も形として残しておくことができる。</p>
+            </div>
+            <div class="favouritesBX"onclick="favourite_click();">
+                <img src="./icon_favourite/note.png">
+                <h2>Teaching Japanese</h2>
+                <p>日本語の勉強を始めたいと思っている人にアドバイスしたり、サポートしたりしています。</p>
+            </div>
+            <div class="favouritesBX"onclick="favourite_click();">
+                <img src="./icon_favourite/beer.png">
+                <h2>Pub</h2>
+                <p>居酒屋に食べに行くのが好きです。ここで友達と食べたり飲んだりして、楽しむのはもちろん、飲み会とかで多くの人と出逢ってコミュニケーション能力も高まります。</p>
+            </div>
+            <div class="favouritesBX"onclick="favourite_click();">
+                <img src="./icon_favourite/shop.png">
+                <h2>Shopping</h2>
+                <p>ショッピングに行くのはストレス解消法の一つです。＾ー＾</p>
+            </div>
+            <div class="favouritesBX"onclick="favourite_click();">
+                <img src="./icon_favourite/football.png">
+                <h2>スポーツ</h2>
+                <p>サッカー、ベレーボール</br> 高校の時、バレーボール部に所属していました。得意でもないけど、私と競争してみませんか？</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="myLife" id="myLife">
+        <div class="heading">
+            <h2>My Life</h2>
+            <p>My everyday life.</p>
+        </div>
+        <div class="content">
+            <div class="myLifeBX">
+                <img src="./mylife/toi1.jpeg">
+            </div>
+            <div class="myLifeBX">
+                <img src="./mylife/toi2.jpeg">
+            </div>
+            <div class="myLifeBX">
+                <img src="./mylife/toi3.jpeg">
+            </div>
+            <div class="myLifeBX">
+                <img src="./mylife/toi4.jpeg">
+            </div>
+         
+           
+             <div id="toi1" ></div>   
+             
+            
+        </div>
+        <div class="heading"onclick="viewmore()"id="tung">
+            <a class="btn">View More</a>
+        </div>
+    </section>
+
+    <section class="diemmanh" id="diemmanh">
+        <div class="heading">
+            <h2>Experience</h2>
+            <p>日本に6年住んでいた私の体験</p>
+        </div>
+        <div class="content">
+            <div class="diemmanhBx">
+                <p>
+                    私は初めて出逢った人にでもすぐ仲良くすることができます。人と関わるのが好きなので、学校で積極的に学祭イベントや国際交流会に参加し、活躍しています。
+
+                </p>
+                <h3>VAN TUNG</h3>
+            </div>
+            <div class="diemmanhBx">
+                <p>大学で日本語の知識と専門的な知識を学ぶことができました。
+                    </p>
+                <h3>VAN TUNG</h3>
+            </div>
+            <div class="diemmanhBx">
+                <p>先生の指導に従い、グループワークをして、知識も体得できるし、コミュニケーション能力も向上していきます。
+                    </p>
+                <h3>VAN TUNG</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="heading white">
+            <h2>Contact ME</h2>
+            <p>現在、東京に住んでいます</p>
+        </div>
+        <div class="content">
+            <div class="contactInfo">
+                <h3>連絡先</h3>
+                <div class="contactInfoBx">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-map-marker"></i>
+                        </div>
+                        <div class="text">
+                            <h3>住所</h3>
+                            <p>日本<br>神奈川県横浜市<br> ＊＊＊＊＊＊＊</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>電話番号</h3>
+                            <p>080xxxxxx56</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa fa-envelope-o"></i>
+                        </div>
+                        <div class="text">
+                            <h3>メール</h3>
+                            <p>vantung***@gmail.com</p>
+                        </div>
+                    </div>
+                            <!--link info-->
+                    <div class="box" style="padding-top: 0px;">
+                        <div class="icon">
+
+                            <a href="#" class="fa fa-facebook"></a>
+                        </div>
+                        <div class="text">
+                            <h3><a href="#">FaceBook</a></h3>
+                            <p>Tùng＊＊＊ Văn</p>
+                        </div>
+                    </div>
+                    <div class="box" style="padding-top: 0px;">
+                        <div class="icon">
+                            <a href="#" class="fa fa-twitter"></a>
+                        </div>
+                        <div class="text">
+                            <h3><a href="#">Twitter</a></h3>
+                            <p>***********</p>
+                        </div>
+                    </div>
+                    <div class="box" style="padding-top: 0px;">
+                        <div class="icon">
+                            <a href="＃" class="fa fa-instagram"></a>
+                        </div>
+                        <div class="text">
+                            <h3><a href="＃">Instagram</a></h3>
+                            <p>van_＊＊＊_tran</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="formBx">
+                <form>
+                    <h3> メッセージ</h3>
+                    <input type="text" name="" placeholder="氏名" id="name" value="tran van tung"  value="tran van tung" onkeydown="this.style.color='yellow'" onkeyup="this.style.color='white'">
+                    <input type="email" name="" placeholder="メール" id="email" value="vantung***@gmail.com"  onkeydown="this.style.color='yellow'" onkeyup="this.style.color='white'">
+                    <textarea placeholder="メッセージをお待ちします。入力されたメッセージは下に表示されます。" id="message"  onkeydown="this.style.color='yellow'" onkeyup="this.style.color='white'"></textarea>
+                    <button type="button"onclick="printinfo()">送信</button>
+                </form>
+                <p id="printmessage" style="color: rgb(255, 255, 255);font-size: 20px;width: 100%;font-family: cursive;"></p>
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="copyright">
+        <p>Copyrights By tran van tung - 2021</p>
+    </div>
+    <script type="text/javascript">
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        });
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active')
+        }
+
+             
+      
+            //viewmore
+            function viewmore() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            
+           
+            if (this.readyState == 4 && this.status == 200) { 
+            var arr=new Array(9);
+            for(var i=0;i<arr.length;i++){
+                var h11 = document.createElement("div");
+
+                arr[i]="./more_mylife/mylife"+i+".jpg";
+                var c="toi"+(i+1);
+                var divv=" <div class='myLifeBX1'>";
+                var imgs="<img src="+arr[i]+">";
+                var child="</div>";
+                
+                document.getElementById(c).innerHTML =divv+imgs+child;
+                
+                h11.id="toi"+(i+2);
+                document.getElementById("toi1").appendChild(h11);
+
+            }
+    }
+  };
+  xhttp.open("GET", "#", true);
+  xhttp.send();
+            }
+           
+            //favourite-click
+            function favourite_click() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+            window.alert("現在、データがアップロードされていません");
+     
+    }
+  };
+  xhttp.open("GET", "#", true);
+  xhttp.send();
+            }
+            //send-message
+            function printinfo() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+            let nameinfo=document.getElementById("name").value;
+            let emailinfo=document.getElementById("email").value;
+            let messagetext=document.getElementById("message").value;
+            let thanks="THANK YOU, "+nameinfo+"！</br>"; 
+            let thanks1="Thanks for visted my web site 'VAN TUNG' and Sent message for me！！" +"</br>";
+            let thanks3="Message Content: "+"'"+messagetext+"'.";
+            let tks4=thanks+thanks1+thanks3;
+            if (this.readyState == 4 && this.status == 200) {
+                
+            document.getElementById("printmessage").innerHTML =tks4;
+
+                
+      
+    }
+  };
+  
+       
+  xhttp.open("GET", "#", true);
+  xhttp.send();
+            }
+
+
+
+  </script>
+</body>
+</html>
