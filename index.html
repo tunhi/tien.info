@@ -1,337 +1,506 @@
-<!DOCTYPE html>
-<html lang="ja">
+<!doctype html>
+<html class="no-js" lang="en">
+
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>vantung</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
+	<!-- meta data -->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- title of site -->
+	<title>国際業務コンサル</title>
+
+	<!-- For favicon png -->
+	<link rel="shortcut icon" type="image/icon" href="assets/logo/favicon.png" />
+
+	<!--font-awesome.min.css-->
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+	<!--flat icon css-->
+	<link rel="stylesheet" href="assets/css/flaticon.css">
+
+	<!--animate.css-->
+	<link rel="stylesheet" href="assets/css/animate.css">
+
+	<!--owl.carousel.css-->
+	<link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="assets/css/owl.theme.default.min.css">
+
+	<!--bootstrap.min.css-->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+	<!-- bootsnav -->
+	<link rel="stylesheet" href="assets/css/bootsnav.css">
+
+	<!--style.css-->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<!--responsive.css-->
+	<link rel="stylesheet" href="assets/css/responsive.css">
+
 </head>
+
 <body>
-    <header>
-        <a href="#" class="logo">国際業務コンサル</a>
-        <div class="toggle" onclick="toggleMenu();"></div>
-        <ul class="menu">
-            <li><a href="#home" onclick="toggleMenu();">TOP</a></li>
-            <li><a href="#about" onclick="toggleMenu();">会社概要</a></li>
-            <li><a href="#favourites" onclick="toggleMenu();">事業内容</a></li>
-            <li><a href="#myLife" onclick="toggleMenu();">My Life</a></li>
-            <li><a href="#diemmanh" onclick="toggleMenu();">Experience</a></li>
-            <li><a href="#contact" onclick="toggleMenu();">問い合わせ</a></li>
-        </ul>
-    </header>
-    <section class="banner" id="home">
-        <div class="textBx">
-            <h2>ようこそ！</h2>
-            <h3>国際業務コンサル</h3>
-            <a href="#about" class="btn" >About</a>
-        </div>
-    </section>
+	<!-- top-area Start -->
+	<header class="top-area" id="top">
+		<div class="header-area">
+			<!-- Start Navigation -->
+			<nav class="navbar navbar-default bootsnav navbar-fixed dark no-background">
 
-    <section class="about" id="about">
-        <div class="heading">
-            <h2>会社紹介</h2>
-        </div>
-            <div class="content">
-            <div class="contentBx">
-                <h3>会社概要</h3></br>
-                <h4></h4>
-                <table>
-                    <tr>
-                        <td style="width:150px">社名（商号）</td>
-                        <td>国際業務コンサル</td>
-                    </tr>
-                    <tr>
-                        <td>略称</td>
-                        <td>ITT</td>
-                    </tr>
-                    <tr>
-                        <td>設立</td>
-                        <td>2024年 03月 08日</td>
-                    </tr>
-                    <tr>
-                        <td>資本金</td>
-                        <td>該当なし</td>
-                    </tr>
-                    <tr>
-                        <td>決算月</td>
-                        <td>3月</td>
-                    </tr>
-                    <tr>
-                        <td>代表取締役</td>
-                        <td>NGUYEN VIET TIEN</td>
-                    </tr>
-                    <tr>
-                        <td>事業内容</td>
-                        <td>コンサルティング業（企業のすべて問題解決）、翻訳・通訳代行、事務代
-                            行、営業サポート、総務サポート、経理サポート、海外取引支援、国際
-                            運論、海外の輸入・輸出</td>
-                    </tr>
-                </table>
-            </div>
+				<div class="container">
 
-            <div class="w50">
-                <img src="./banner/img111.png" class="img" style="min-width:100%;">
-            </div>
-        </div>
-    </section>
+					<!-- Start Header Navigation -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
+							<i class="fa fa-bars"></i>
+						</button>
+						<a class="navbar-brand" href="index.html">国際業務コンサル</a>
+					</div><!--/.navbar-header-->
+					<!-- End Header Navigation -->
 
-    <section class="favourites" id="favourites">
-        <div class="heading white">
-            <h2>Favourite anh Experience</h2>
-            <p>I'm an international student.I came to Japan 6 years ago from VIET NAM.</br>This is my Favourite </p>
-        </div>
-        <div class="content">
-            <div class="favouritesBX"onclick="favourite_click();">
-                <img src="./icon_favourite/camera.png">
-                <h2>Photography</h2>
-                <p>写真を見ただけで、その時の様子を思い出すことができる。
-                    記憶とか思い出は目に見える形として残らないけど、写真は形として残しておくことができる。
-                    人生の素敵な瞬間を残しておきたい。</p>
-            </div>
-            <div class="favouritesBX"onclick="favourite_click();">
-                <img src="./icon_favourite/video_edit.png">
-                <h2>Video Editing</h2>
-                <p>動画撮影をし、面白い動画を編集し、沢山の人に見てくれると嬉しいし、日常の生活も形として残しておくことができる。</p>
-            </div>
-            <div class="favouritesBX"onclick="favourite_click();">
-                <img src="./icon_favourite/note.png">
-                <h2>Teaching Japanese</h2>
-                <p>日本語の勉強を始めたいと思っている人にアドバイスしたり、サポートしたりしています。</p>
-            </div>
-            <div class="favouritesBX"onclick="favourite_click();">
-                <img src="./icon_favourite/beer.png">
-                <h2>Pub</h2>
-                <p>居酒屋に食べに行くのが好きです。ここで友達と食べたり飲んだりして、楽しむのはもちろん、飲み会とかで多くの人と出逢ってコミュニケーション能力も高まります。</p>
-            </div>
-            <div class="favouritesBX"onclick="favourite_click();">
-                <img src="./icon_favourite/shop.png">
-                <h2>Shopping</h2>
-                <p>ショッピングに行くのはストレス解消法の一つです。＾ー＾</p>
-            </div>
-            <div class="favouritesBX"onclick="favourite_click();">
-                <img src="./icon_favourite/football.png">
-                <h2>スポーツ</h2>
-                <p>サッカー、ベレーボール</br> 高校の時、バレーボール部に所属していました。得意でもないけど、私と競争してみませんか？</p>
-            </div>
-        </div>
-    </section>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse menu-ui-design" id="navbar-menu">
+						<ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+							<li class=" smooth-menu active"></li>
+							<li class=" smooth-menu"><a href="#top">TOP</a></li>
+							<li class="smooth-menu"><a href="#about">会社概要</a></li>
+							<li class="smooth-menu"><a href="#business_map">事業案内</a></li>
+							<li class="smooth-menu"><a href="#contact">問い合わせ</a></li>
+						</ul><!--/.nav -->
+					</div><!-- /.navbar-collapse -->
+				</div><!--/.container-->
+			</nav><!--/nav-->
+			<!-- End Navigation -->
+		</div><!--/.header-area-->
 
-    <section class="myLife" id="myLife">
-        <div class="heading">
-            <h2>My Life</h2>
-            <p>My everyday life.</p>
-        </div>
-        <div class="content">
-            <div class="myLifeBX">
-                <img src="./mylife/toi1.jpeg">
-            </div>
-            <div class="myLifeBX">
-                <img src="./mylife/toi2.jpeg">
-            </div>
-            <div class="myLifeBX">
-                <img src="./mylife/toi3.jpeg">
-            </div>
-            <div class="myLifeBX">
-                <img src="./mylife/toi4.jpeg">
-            </div>
-         
-           
-             <div id="toi1" ></div>   
-             
-            
-        </div>
-        <div class="heading"onclick="viewmore()"id="tung">
-            <a class="btn">View More</a>
-        </div>
-    </section>
+		<div class="clearfix"></div>
 
-    <section class="diemmanh" id="diemmanh">
-        <div class="heading">
-            <h2>Experience</h2>
-            <p>日本に6年住んでいた私の体験</p>
-        </div>
-        <div class="content">
-            <div class="diemmanhBx">
-                <p>
-                    私は初めて出逢った人にでもすぐ仲良くすることができます。人と関わるのが好きなので、学校で積極的に学祭イベントや国際交流会に参加し、活躍しています。
+	</header><!-- /.top-area-->
+	<!-- top-area End -->
 
-                </p>
-                <h3>VAN TUNG</h3>
-            </div>
-            <div class="diemmanhBx">
-                <p>大学で日本語の知識と専門的な知識を学ぶことができました。
-                    </p>
-                <h3>VAN TUNG</h3>
-            </div>
-            <div class="diemmanhBx">
-                <p>先生の指導に従い、グループワークをして、知識も体得できるし、コミュニケーション能力も向上していきます。
-                    </p>
-                <h3>VAN TUNG</h3>
-            </div>
-        </div>
-    </section>
+	<!--welcome-hero start -->
+	<section id="welcome-hero" class="welcome-hero">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-12 text-center">
+					<div class="header-text">
+						<h2>hi <span>,</span> We are <br> International <br> Business Consultants <span>.</span> </h2>
+						<p>国際業務コンサル</p>
+					</div><!--/.header-text-->
+				</div><!--/.col-->
+			</div><!-- /.row-->
+		</div><!-- /.container-->
 
-    <section class="contact" id="contact">
-        <div class="heading white">
-            <h2>Contact ME</h2>
-        </div>
-        <div class="content">
-            <div class="contactInfo">
-                <h3>連絡先</h3>
-                <div class="contactInfoBx">
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-map-marker"></i>
-                        </div>
-                        <div class="text">
-                            <h3>住所</h3>
-                            <p>日本<br>埼玉県さいたま市桜区西堀 2-20-3-105</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-phone"></i>
-                        </div>
-                        <div class="text">
-                            <h3>電話番号</h3>
-                            <p>090-9640-1112</p>
-                        </div>
-                    </div>
-                    <div class="box">
-                        <div class="icon">
-                            <i class="fa fa-envelope-o"></i>
-                        </div>
-                        <div class="text">
-                            <h3>メール</h3>
-                            <p>caubuon051996@gmail.com</p>
-                            <p>kokusai.gm@gmail.com</p>
-                        </div>
-                    </div>
-                            <!--link info-->
-                    <div class="box" style="padding-top: 0px;">
-                        <div class="icon">
+	</section><!--/.welcome-hero-->
+	<!--welcome-hero end -->
 
-                            <a href="https://www.facebook.com/viettien0596" class="fa fa-facebook"></a>
-                        </div>
-                        <div class="text">
-                            <h3><a href="https://www.facebook.com/viettien0596">FaceBook</a></h3>
-                                <p>Việt Tiến</p>
-                        </div>
-                    </div>
-                    <div class="box" style="padding-top: 0px;">
-                        <div class="icon">
-                            
-                            <a href="https://line.me/ti/p/NmziO6gc5e" class="">LINE</a>
-                        </div>
-                        <div class="text">
-                            <h3><a href="https://line.me/ti/p/NmziO6gc5e">Line</a></h3>
-                            <p>Việt Tiến</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="formBx">
-                <form>
-                    <h3> メッセージ</h3>
-                    <input type="text" name="" placeholder="氏名" id="name" value=""  value="tran van tung" onkeydown="this.style.color='yellow'" onkeyup="this.style.color='white'">
-                    <input type="email" name="" placeholder="メール" id="email" value="kokusai.gm@gmail.com"  onkeydown="this.style.color='yellow'" onkeyup="this.style.color='white'">
-                    <textarea placeholder="メッセージをお待ちします。入力されたメッセージは下に表示されます。" id="message"  onkeydown="this.style.color='yellow'" onkeyup="this.style.color='white'"></textarea>
-                    <button type="button"onclick="printinfo()">送信</button>
-                </form>
-                <p id="printmessage" style="color: rgb(255, 255, 255);font-size: 20px;width: 100%;font-family: cursive;"></p>
+	<!--about start -->
+	<section id="about" class="about">
+		<div class="section-heading text-center">
+			<h2>会社概要</h2>
+		</div>
+		<div class="container">
+			<div class="about-content">
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="single-about-txt">
+							<table class="table table-bordered">
+								<tr>
+									<th scope="row">社名（商号）/th>
+									<td>国際業務コンサル</td>
+								</tr>
+								<tr>
+									<th scope="row">略称</th>
+									<td>IBC</td>
+								</tr>
+								<tr>
+									<th scope="row">設立</th>
+									<td>2024年 03月 08日</td>
+								</tr>
+								<tr>
+									<th scope="row">資本金</th>
+									<td>該当なし</td>
+								</tr>
+								<tr>
+									<th scope="row">事業概要</th>
+									<td>コンサルティング業（企業のすべて問題解決）、翻訳・通訳代行、事務代 行、営業サポート、総務サポート、経理サポート、海外取引支援、国際 運論、海外の輸入・輸出
+									</td>
+								</tr>
+							</table>
+							<div class="row">
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>phone</h3>
+										<p>090-9640-1112</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>email</h3>
+										<p>kokusai.gm@gmail.com</p>
+									</div>
+								</div>
+								<div class="col-sm-4">
+									<div class="single-about-add-info">
+										<h3>website</h3>
+										<p>www.kokusaigm.jp</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-offset-1 col-sm-5">
+						<div class="single-about-img">
+							<img src="assets/images/about/profile_image.jpg" alt="profile_image">
+							<div class="about-list-icon">
+								<ul>
+									<li>
+										<a href="https://www.facebook.com/viettien0596">
+											<i class="fa fa-facebook" aria-hidden="true"></i>
+										</a>
+									</li><!-- / li -->
+									<li>
+										<a href="#">
+											<i class="fa fa-dribbble" aria-hidden="true"></i>
+										</a>
 
-            </div>
+									</li><!-- / li -->
+									<li>
+										<a href="#">
+											<i class="fa fa-twitter" aria-hidden="true"></i>
+										</a>
 
-        </div>
-    </section>
-
-    <div class="copyright">
-        <p>Copyrights By tran van tung - 2024</p>
-        <p>Gmail:kimi.tvt@gmail.com</p>
-    </div>
-    <script type="text/javascript">
-        window.addEventListener('scroll',function(){
-            var header = document.querySelector('header');
-            header.classList.toggle('sticky',window.scrollY > 0);
-        });
-        function toggleMenu(){
-            var menuToggle = document.querySelector('.toggle');
-            var menu = document.querySelector('.menu');
-            menuToggle.classList.toggle('active');
-            menu.classList.toggle('active')
-        }
-
-             
-      
-            //viewmore
-            function viewmore() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-            
-           
-            if (this.readyState == 4 && this.status == 200) { 
-            var arr=new Array(9);
-            for(var i=0;i<arr.length;i++){
-                var h11 = document.createElement("div");
-
-                arr[i]="./more_mylife/mylife"+i+".jpg";
-                var c="toi"+(i+1);
-                var divv=" <div class='myLifeBX1'>";
-                var imgs="<img src="+arr[i]+">";
-                var child="</div>";
-                
-                document.getElementById(c).innerHTML =divv+imgs+child;
-                
-                h11.id="toi"+(i+2);
-                document.getElementById("toi1").appendChild(h11);
-
-            }
-    }
-  };
-  xhttp.open("GET", "#", true);
-  xhttp.send();
-            }
-           
-            //favourite-click
-            function favourite_click() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            window.alert("現在、データがアップロードされていません");
-     
-    }
-  };
-  xhttp.open("GET", "#", true);
-  xhttp.send();
-            }
-            //send-message
-            function printinfo() {
-            var xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function() {
-            let nameinfo=document.getElementById("name").value;
-            let emailinfo=document.getElementById("email").value;
-            let messagetext=document.getElementById("message").value;
-            let thanks="THANK YOU, "+nameinfo+"！</br>"; 
-            let thanks1="Thanks for visted my web site 'VAN TUNG' and Sent message for me！！" +"</br>";
-            let thanks3="Message Content: "+"'"+messagetext+"'.";
-            let tks4=thanks+thanks1+thanks3;
-            if (this.readyState == 4 && this.status == 200) {
-                
-            document.getElementById("printmessage").innerHTML =tks4;
-
-                
-      
-    }
-  };
-  
-       
-  xhttp.open("GET", "#", true);
-  xhttp.send();
-            }
+									</li><!-- / li -->
+									<li>
+										<a href="#">
+											<i class="fa fa-linkedin" aria-hidden="true"></i>
+										</a>
+									</li><!-- / li -->
+									<li>
+										<a href="#">
+											<i class="fa fa-instagram" aria-hidden="true"></i>
+										</a>
+									</li><!-- / li -->
 
 
+								</ul><!-- / ul -->
+							</div><!-- /.about-list-icon -->
 
-  </script>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!--/.about-->
+	<!--about end -->
+
+	<!--business_map start -->
+	<section id="business_map" class="business_map">
+		<div class="business_map-details">
+			<div class="section-heading text-center">
+				<h2>事業案内</h2>
+			</div>
+			<div class="container">
+				<div class="business_map-content">
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href=""><i class="flaticon-dribbble"></i></a>
+									<div class="profile-icon-name">コンサルティング業</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">コンサルティング業</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href=""><i class="flaticon-dribbble"></i></a>
+									<div class="profile-icon-name">翻訳・通訳代行</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">翻訳・通訳代行</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href=""><i class="flaticon-dribbble"></i></a>
+									<div class="profile-icon-name">事務代行</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">事務代行</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile profile-no-border">
+								<div class="profile-txt">
+									<a href=""><i class="flaticon-dribbble"></i></a>
+									<div class="profile-icon-name">営業サポート</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">営業サポート</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="profile-border"></div>
+					<div class="row">
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href=""><i class="flaticon-dribbble"></i></a>
+									<div class="profile-icon-name">総務サポート</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">総務サポート</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href=""><i class="flaticon-dribbble"></i></a>
+									<div class="profile-icon-name">経理サポート</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">経理サポート</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile">
+								<div class="profile-txt">
+									<a href=""><i class="flaticon-dribbble"></i></a>
+									<div class="profile-icon-name">海外取引支援</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">海外取引支援</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<div class="single-profile profile-no-border">
+								<div class="profile-txt">
+									<a href=""><i class="flaticon-dribbble"></i></a>
+									<div class="profile-icon-name">国際 運論、海外の輸入・輸出</div>
+								</div>
+								<div class="single-profile-overlay">
+									<div class="profile-txt">
+										<a href=""><i class="flaticon-dribbble"></i></a>
+										<div class="profile-icon-name">国際 運論、海外の輸入・輸出</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</section><!--/.business_map-->
+	<!--business_map end -->
+
+	<!--business_life start -->
+	<section id="business_life" class="business_life">
+		<div class="business_life-details">
+			<div class="section-heading text-center">
+				<h2>事業生活</h2>
+			</div>
+			<div class="container">
+				<div class="business_life-content">
+					<div class="isotope">
+						<div class="row">
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="assets/images/business_life/p1.jpg" alt="business_life image" />
+									<div class="isotope-overlay">
+										<a href="#">
+											ui/ux design
+										</a>
+									</div><!-- /.isotope-overlay -->
+								</div><!-- /.item -->
+								<div class="item">
+									<img src="assets/images/business_life/p2.jpg" alt="business_life image" />
+									<div class="isotope-overlay">
+										<a href="#">
+											ui/ux design
+										</a>
+									</div><!-- /.isotope-overlay -->
+								</div><!-- /.item -->
+							</div><!-- /.col -->
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="assets/images/business_life/p3.jpg" alt="business_life image" />
+									<div class="isotope-overlay">
+										<a href="#">
+											web design
+										</a>
+									</div><!-- /.isotope-overlay -->
+								</div><!-- /.item -->
+							</div><!-- /.col -->
+
+							<div class="col-sm-4">
+								<div class="item">
+									<img src="assets/images/business_life/p4.jpg" alt="business_life image" />
+									<div class="isotope-overlay">
+										<a href="#">
+											web development
+										</a>
+									</div><!-- /.isotope-overlay -->
+								</div><!-- /.item -->
+								<div class="item">
+									<img src="assets/images/business_life/p5.jpg" alt="business_life image" />
+									<div class="isotope-overlay">
+										<a href="#">
+											web development
+										</a>
+									</div><!-- /.isotope-overlay -->
+								</div><!-- /.item -->
+							</div><!-- /.col -->
+						</div><!-- /.row -->
+					</div><!--/.isotope-->
+				</div><!--/.gallery-content-->
+			</div><!--/.container-->
+		</div><!--/.business_life-details-->
+
+	</section><!--/.business_life-->
+	<!--business_life end -->
+
+	<!--contact start -->
+	<section id="contact" class="contact">
+		<div class="section-heading text-center">
+			<h2>問い合わせ</h2>
+		</div>
+		<div class="container">
+			<div class="contact-content">
+				<div class="row">
+
+					<div class="col-md-offset-1 col-md-5 col-sm-6">
+						<div class="single-contact-box">
+							<div class="contact-adress">
+								<div class="contact-add-head">
+									<h3>国際業務コンサル</h3>
+								</div>
+								<div class="contact-add-info">
+									<div class="single-contact-add-info">
+										<h3>住所</h3>
+										<p>日本、埼玉県さいたま市桜区西堀 2-20-3-105</p>
+									</div>
+									<div class="single-contact-add-info">
+										<h3>電話番号</h3>
+										<p>090-9640-1112</p>
+									</div>
+									<div class="single-contact-add-info">
+										<h3>email</h3>
+										<p>kokusai.gm@gmail.com</p>
+									</div>
+									<div class="single-contact-add-info">
+										<h3>website</h3>
+										<p>www.kokusaigm.jp</p>
+									</div>
+								</div>
+							</div><!--/.contact-adress-->
+							<div class="hm-foot-icon">
+								<ul>
+									<li><a href="https://www.facebook.com/viettien0596"><i class="fa fa-facebook"></i>
+											FACEBOOK</a></li><!--/li-->
+									<li><a href="https://line.me/ti/p/NmziO6gc5e">LINE</a>
+									</li>
+								</ul><!--/ul-->
+							</div><!--/.hm-foot-icon-->
+						</div><!--/.single-contact-box-->
+					</div><!--/.col-->
+				</div><!--/.row-->
+			</div><!--/.contact-content-->
+		</div><!--/.container-->
+
+	</section><!--/.contact-->
+	<!--contact end -->
+
+	<!--footer-copyright start-->
+	<footer id="footer-copyright" class="footer-copyright">
+		<div class="container">
+			<div class="hm-footer-copyright text-center">
+				<p>
+					&copy; copyright TRAN VAN TUNG.</br>
+					Emai:kimi.tvt@gmail.com
+				</p><!--/p-->
+			</div><!--/.text-center-->
+		</div><!--/.container-->
+
+		<div id="scroll-Top">
+			<div class="return-to-top">
+				<i class="fa fa-angle-up " id="scroll-top"></i>
+			</div>
+
+		</div><!--/.scroll-Top-->
+
+	</footer><!--/.footer-copyright-->
+	<!--footer-copyright end-->
+
+	<script src="assets/js/jquery.js"></script>
+
+	<!--modernizr.min.js-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+	<!--bootstrap.min.js-->
+	<script src="assets/js/bootstrap.min.js"></script>
+
+	<!-- bootsnav js -->
+	<script src="assets/js/bootsnav.js"></script>
+
+	<!-- jquery.sticky.js -->
+	<script src="assets/js/jquery.sticky.js"></script>
+
+	<!-- for progress bar start-->
+
+	<!-- progressbar js -->
+	<script src="assets/js/progressbar.js"></script>
+
+	<!-- appear js -->
+	<script src="assets/js/jquery.appear.js"></script>
+
+	<!-- for progress bar end -->
+
+	<!--owl.carousel.js-->
+	<script src="assets/js/owl.carousel.min.js"></script>
+
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+
+
+	<!--Custom JS-->
+	<script src="assets/js/custom.js"></script>
+
 </body>
+
 </html>
